@@ -4,7 +4,7 @@ rm -rf ranks.csv
 
 $SPARK_HOME/bin/spark-submit \
   --class "FinGraphServerDebug" \
-  --master "local[*]" \
+  --master "yarn" \
   --executor-memory 8G \
   --driver-memory 8G \
   --packages "graphframes:graphframes:0.5.0-spark2.1-s_2.11" \
